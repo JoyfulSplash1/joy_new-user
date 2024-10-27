@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+.CardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding:10px 0px;
+}
+.CardContainer .card {
+    background-color: white;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    height: fit-content;
+    min-height: 600px;
+    box-shadow: 2px 4px 6px #666;
+}
+
+.CardContainer .card .userImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: center;
+    vertical-align: middle;
+}
+
+.CardContainer .card .userData {
+    margin: 20px 0;
+}
+
+.CardContainer .card .userData .name {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.CardContainer .card .userData .name b{
+    text-transform: capitalize;
+}
+
+.CardContainer .card .userData .userinfo{
+    padding: 0px 4px;
+}
+
+.CardContainer .card .userData .userinfo-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.CardContainer .card .userData .userinfo-text span{
+    max-width: 90dvw;
+    text-transform: capitalize;
+}
+.CardContainer .card .userData .userinfo-text label{
+    width: 100px;
+    font-weight: 700;
+    color: #666;
+    letter-spacing:2px;
+}
+
+.buttonCon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+}
+.buttonCon button{
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+.buttonCon button:hover{
+    background-color: aqua;
+}
